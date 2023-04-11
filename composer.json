@@ -1,0 +1,35 @@
+{
+  "name": "romkamix/hosts",
+  "type": "project",
+  "description": "HOSTS package for laravel",
+  "keywords": [
+    "framework",
+    "laravel",
+    "romkamix",
+    "hosts"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.3|^8.0",
+    "laravel/framework": "^9.34",
+    "geerlingguy/ping": "^1.2"
+  },
+  "require-dev": {
+    "barryvdh/laravel-ide-helper": "^2.13"
+  },
+  "autoload": {
+    "psr-4": {
+      "Romkamix\\App\\": "src/app/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Romkamix\\App\\Providers\\HostServiceProvider",
+        "Romkamix\\App\\Providers\\HostEventServiceProvider"
+      ]
+    }
+  }
+}
